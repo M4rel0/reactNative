@@ -1,30 +1,25 @@
 import { View, Text, StyleSheet } from "react-native";
 import { useState } from "react";
+import { colors } from "@/styles/colors";
+
 import { Input } from "@/components/input";
 import { Button } from "@/components/button";
-import { router } from "expo-router";
 
 export default function Index() {
-  const [name, setName] = useState("");
-
-  function trocaPagina() {
-    router.navigate("/dashboard");
-  }
+  /*const [name, setName] = useState("");
 
   function onChangeText(text: string) {
     setName(text);
   }
+  return <View style={styles.container}></View>;*/
+
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>OLA, {name}</Text>
-
-      <Input onChangeText={setName} />
-
-      <Button title="entrar" onPress={trocaPagina} activeOpacity={0.3} />
+    <View style={{ flex: 1 }}>
+      <Text> oi</Text>
     </View>
   );
 }
-
+/*
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -40,3 +35,4 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
   },
 });
+*/
