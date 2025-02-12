@@ -4,22 +4,25 @@ import { colors } from "@/styles/colors";
 
 import { Input } from "@/components/input";
 import { Button } from "@/components/button";
+import { Header } from "@/components/header";
+import Loader from "@/components/teste";
+import { Marca } from "@/components/marca"; // Adjust the import path as necessary
 
 export default function Index() {
-  /*const [name, setName] = useState("");
+  const [name, setName] = useState("");
 
   function onChangeText(text: string) {
     setName(text);
   }
-  return <View style={styles.container}></View>;*/
 
   return (
-    <View style={{ flex: 1 }}>
-      <Text> oi</Text>
+    <View style={styles.container}>
+      <Header />
+      <Marca />
     </View>
   );
 }
-/*
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -35,4 +38,3 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
   },
 });
-*/
