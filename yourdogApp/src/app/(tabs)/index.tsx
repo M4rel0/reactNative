@@ -4,10 +4,12 @@ import { colors } from "@/styles/colors";
 
 import { Input } from "@/components/input";
 import { Button } from "@/components/button";
-import { Header } from "@/components/header";
+import { Separador } from "@/components/separador";
 import Loader from "@/components/teste";
 import { Marca } from "@/components/marca";
 import { Status } from "@/components/status";
+import { Card } from "@/components/scrollbaixo/card";
+import { Scrollbaixo } from "@/components/scrollbaixo";
 
 export default function Index() {
   return (
@@ -15,6 +17,10 @@ export default function Index() {
       <Marca />
 
       <Status />
+
+      <Separador />
+
+      <Scrollbaixo />
     </View>
   );
 }
@@ -25,6 +31,7 @@ const styles = StyleSheet.create({
     backgroundColor: "rgb(131, 168, 19)",
     padding: 10,
     maxWidth: 1200,
+    position: "relative",
   },
   title: {
     color: "red",

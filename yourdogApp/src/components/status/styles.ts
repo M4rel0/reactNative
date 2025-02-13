@@ -4,6 +4,7 @@ import { styles } from "../input/styles";
 export const s = StyleSheet.create({
   container: {
     width: "100%",
+    maxHeight: "12%",
     flexDirection: "row",
     padding: 10,
     gap: 10,

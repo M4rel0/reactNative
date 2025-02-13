@@ -19,9 +19,7 @@ export default function Tabslayout() {
           alignItems: "center",
         },
         tabBarLabelPosition: "below-icon",
-        tabBarItemStyle: {
-          marginHorizontal: 40,
-        },
+        tabBarItemStyle: {},
       }}
     >
       <Tabs.Screen

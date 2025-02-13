@@ -3,8 +3,9 @@ import { styles } from "../input/styles";
 
 export const s = StyleSheet.create({
   container: {
-    height: "auto",
-    width: "40%",
-    backgroundColor: "rgb(38, 56, 160)",
+    height: 2,
+    width: "120%",
+    backgroundColor: "rgb(129, 129, 129)",
+    transform: [{ translateX: -50 }],
   },
 });
