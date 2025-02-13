@@ -6,19 +6,15 @@ import { Input } from "@/components/input";
 import { Button } from "@/components/button";
 import { Header } from "@/components/header";
 import Loader from "@/components/teste";
-import { Marca } from "@/components/marca"; // Adjust the import path as necessary
+import { Marca } from "@/components/marca";
+import { Status } from "@/components/status";
 
 export default function Index() {
-  const [name, setName] = useState("");
-
-  function onChangeText(text: string) {
-    setName(text);
-  }
-
   return (
     <View style={styles.container}>
-      <Header />
       <Marca />
+
+      <Status />
     </View>
   );
 }
@@ -26,10 +22,9 @@ export default function Index() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#ecf2d9",
-    padding: 32,
-    justifyContent: "center",
-    gap: 10,
+    backgroundColor: "rgb(131, 168, 19)",
+    padding: 10,
+    maxWidth: 1200,
   },
   title: {
     color: "red",

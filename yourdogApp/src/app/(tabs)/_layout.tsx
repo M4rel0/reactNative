@@ -12,7 +12,16 @@ export default function Tabslayout() {
         headerShown: false,
         tabBarShowLabel: true,
         tabBarActiveTintColor: colors.gray[500],
-        tabBarInactiveTintColor: colors.gray[100], //
+        tabBarInactiveTintColor: colors.gray[100],
+        tabBarStyle: {
+          maxWidth: 1200,
+          justifyContent: "space-around",
+          alignItems: "center",
+        },
+        tabBarLabelPosition: "below-icon",
+        tabBarItemStyle: {
+          marginHorizontal: 40,
+        },
       }}
     >
       <Tabs.Screen
