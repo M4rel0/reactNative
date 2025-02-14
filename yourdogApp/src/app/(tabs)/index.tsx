@@ -10,6 +10,7 @@ import { Marca } from "@/components/marca";
 import { Status } from "@/components/status";
 import { Card } from "@/components/scrollbaixo/card";
 import { Scrollbaixo } from "@/components/scrollbaixo";
+import { Imgcard } from "@/components/scrollbaixo/card/imgcard";
 
 export default function Index() {
   return (
@@ -29,9 +30,10 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "rgb(131, 168, 19)",
-    padding: 10,
+    padding: 0,
     maxWidth: 1200,
     position: "relative",
+    margin: 0,
   },
   title: {
     color: "red",
