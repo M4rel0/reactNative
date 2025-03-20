@@ -17,10 +17,6 @@ export default function Index() {
     <View style={styles.container}>
       <Marca />
 
-      <Status />
-
-      <Separador />
-
       <Scrollbaixo />
     </View>
   );

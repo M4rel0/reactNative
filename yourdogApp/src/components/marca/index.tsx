@@ -7,13 +7,8 @@ export function Marca() {
   return (
     <View style={s.container}>
       <Image
-        source={require("../../../assets/images/YourDog.png")}
+        source={require("../../../assets/images/tituloMarca.png")}
         style={s.imagem}
-      />
-
-      <Image
-        source={require("../../../assets/images/Vector.png")}
-        style={s.imagem2}
       />
     </View>
   );

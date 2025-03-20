@@ -8,21 +8,27 @@ import Ionicons from "@expo/vector-icons/Ionicons";
 export function Emotecard() {
   return (
     <View style={s.container}>
-      <View style={s.iconsCC}>
-        <Octicons style={s.iconsC} name="heart" size={35} color="black" />
-        <Ionicons
-          style={s.iconsC}
-          name="chatbubble-outline"
-          size={35}
-          color="black"
+      <View style={s.icons}>
+        <Image
+          style={s.iconsimg}
+          source={require("@/../assets/images/coracao.png")}
         />
+        <Text style={s.iconsText}>40 mil</Text>
       </View>
-      <Entypo
-        style={s.iconP}
-        name="dots-three-vertical"
-        size={30}
-        color="black"
-      />
+      <View style={s.icons}>
+        <Image
+          style={s.iconsimg}
+          source={require("@/../assets/images/coracao.png")}
+        />
+        <Text style={s.iconsText}>23 mil</Text>
+      </View>
+      <View style={s.icons}>
+        <Image
+          style={s.iconsimg}
+          source={require("@/../assets/images/coracao.png")}
+        />
+        <Text style={s.iconsText}>3 mil</Text>
+      </View>
     </View>
   );
 }
