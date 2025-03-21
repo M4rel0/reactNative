@@ -14,4 +14,7 @@ export const colors = {
   red: {
     300: " #CD5E55",
   },
+  brown: {
+    900: "#312416",
+  },
 };

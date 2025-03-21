@@ -20,6 +20,7 @@ export const s = StyleSheet.create({
   iconsimg: {
     width: 38,
     height: 36,
+    padding: 2,
     backgroundColor: "transparent",
     marginTop: 1,
   },

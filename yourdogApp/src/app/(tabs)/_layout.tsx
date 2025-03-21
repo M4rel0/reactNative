@@ -5,69 +5,73 @@ import FontAwesome5 from "@expo/vector-icons/FontAwesome5";
 import Entypo from "@expo/vector-icons/Entypo";
 import Ionicons from "@expo/vector-icons/Ionicons";
 
+import { Image } from "react-native";
+import { StyleSheet } from "react-native";
+
 export default function Tabslayout() {
   return (
     <Tabs
       screenOptions={{
         headerShown: false,
-        tabBarShowLabel: true,
-        tabBarActiveTintColor: colors.gray[500],
-        tabBarInactiveTintColor: colors.gray[100],
+        tabBarShowLabel: false,
+
         tabBarStyle: {
           maxWidth: 1200,
           justifyContent: "space-around",
           alignItems: "center",
+          backgroundColor: "#312416",
+          paddingTop: 10,
+          alignContent: "center",
+
+          borderTopWidth: 0,
         },
         tabBarLabelPosition: "below-icon",
         tabBarItemStyle: {},
       }}
     >
       <Tabs.Screen
-        name="notificacao"
+        name="perfil"
         options={{
-          tabBarIcon: ({ color, size }) => (
-            <Ionicons name="notifications" size={24} color="black" />
+          tabBarIcon: () => (
+            <Image
+              source={require("../../../assets/images/patinha.png")}
+              style={{ width: 34, height: 34 }}
+            />
           ),
           tabBarBadge: 3,
         }}
       />
-      <Tabs.Screen
-        name="mensagem"
-        options={{
-          tabBarIcon: ({ color, size }) => (
-            <Ionicons name="chatbox-ellipses" size={24} color="black" />
-          ),
-        }}
-      />{" "}
+
       <Tabs.Screen
         name="index"
         options={{
-          tabBarIcon: ({ color, size }) => (
-            <Entypo name="home" size={24} color="black" />
+          tabBarIcon: () => (
+            <Image
+              source={require("../../../assets/images/casinha.png")}
+              style={{ width: 34, height: 34 }}
+            />
           ),
         }}
       />
       <Tabs.Screen
         name="menutind"
         options={{
-          tabBarIcon: ({ color, size }) => (
-            <FontAwesome5 name="fire-alt" size={24} color="black" />
+          tabBarIcon: () => (
+            <Image
+              source={require("../../../assets/images/osso.png")}
+              style={{ width: 34, height: 34 }}
+            />
           ),
         }}
       />
       <Tabs.Screen
-        name="pesquisa"
+        name="mensagem"
         options={{
-          tabBarIcon: ({ color, size }) => (
-            <Ionicons name="search-sharp" size={size} color={color} />
-          ),
-        }}
-      />
-      <Tabs.Screen
-        name="perfil"
-        options={{
-          tabBarIcon: ({ color, size }) => (
-            <Ionicons name="at-circle" size={24} color="black" />
+          tabBarIcon: () => (
+            <Image
+              source={require("../../../assets/images/mensagem.png")}
+              style={{ width: 34, height: 34 }}
+            />
           ),
         }}
       />

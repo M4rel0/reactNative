@@ -18,14 +18,14 @@ export function Emotecard() {
       <View style={s.icons}>
         <Image
           style={s.iconsimg}
-          source={require("@/../assets/images/coracao.png")}
+          source={require("@/../assets/images/mensagem3.png")}
         />
         <Text style={s.iconsText}>23 mil</Text>
       </View>
       <View style={s.icons}>
         <Image
           style={s.iconsimg}
-          source={require("@/../assets/images/coracao.png")}
+          source={require("@/../assets/images/compartilhado.png")}
         />
         <Text style={s.iconsText}>3 mil</Text>
       </View>

@@ -1,4 +1,4 @@
-import { StyleSheet } from "react-native";
+import { ImageBackground, StyleSheet, View, Text } from "react-native";
 
 export const s = StyleSheet.create({
   container: {
@@ -14,13 +14,15 @@ export const s = StyleSheet.create({
     width: 54,
     height: 54,
     borderRadius: 100,
-    backgroundColor: "rgb(188, 109, 123)",
-    borderWidth: 1,
+    overflow: "hidden",
+    borderWidth: 0,
     borderColor: "black",
     marginRight: 10,
     zIndex: 1,
-
-    justifyContent: "center",
+  },
+  img: {
+    width: 54,
+    height: 54,
   },
   textContainer: {
     height: 60,
@@ -40,17 +42,17 @@ export const s = StyleSheet.create({
     fontSize: 17,
     fontWeight: "600",
 
-    backgroundColor: "rgb(188, 109, 123)",
+    backgroundColor: "rgba(255, 255, 255, 0.03)",
   },
 
   raca: {
     color: "white",
     flexDirection: "column",
 
-    backgroundColor: "rgb(188, 109, 123)",
+    backgroundColor: "rgba(255, 255, 255, 0.03)",
   },
   icon: {
-    backgroundColor: "rgb(43, 189, 94)",
+    backgroundColor: "transparent",
     justifyContent: "center",
 
     flex: 1,
