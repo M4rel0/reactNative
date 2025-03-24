@@ -3,7 +3,7 @@ import { colors } from "@/styles/colors";
 import { Button } from "@/components/button";
 import { Marca, MarcaMarrom } from "@/components/marca";
 import { useFonts } from "expo-font";
-
+import { Pesquisa } from "@/components/pesquisa";
 export default function Menutind() {
   return (
     <View style={styles.container}>
@@ -13,6 +13,13 @@ export default function Menutind() {
           source={require("@/../assets/images/Encontre seu parceiro ideal faça novos Aumigo.png")}
           style={styles.img}
         />
+
+        <Image
+          source={require("@/../assets/images/CachorrosFoto.png")}
+          style={styles.caFT}
+        />
+
+        <Pesquisa />
       </View>
     </View>
   );
@@ -20,19 +27,29 @@ export default function Menutind() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "rgb(131, 168, 19)",
+    backgroundColor: "#FFF3E8",
     padding: 0,
-    position: "relative",
+
     margin: 0,
   },
   imgText: {
-    marginLeft: 50,
-    marginTop: 16,
-    height: 200,
-    backgroundColor: "rgb(73, 79, 53)",
+    height: 128,
+    backgroundColor: "#FFE7DB",
     position: "relative",
   },
   img: {
+    resizeMode: "cover",
+
+    marginTop: 16,
+    marginLeft: 30,
+    borderWidth: 0,
+    justifyContent: "center",
+    alignContent: "center",
+  },
+  caFT: {
     position: "absolute",
+    right: -70,
+    top: -12,
+    zIndex: 2,
   },
 });
