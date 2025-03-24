@@ -13,3 +13,14 @@ export function Marca() {
     </View>
   );
 }
+
+export function MarcaMarrom() {
+  return (
+    <View style={s.container2}>
+      <Image
+        source={require("../../../assets/images/tituloMarcaMarrom.png")}
+        style={s.imagem}
+      />
+    </View>
+  );
+}

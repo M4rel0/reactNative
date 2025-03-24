@@ -18,11 +18,12 @@ export default function Tabslayout() {
         tabBarStyle: {
           maxWidth: 1200,
           justifyContent: "space-around",
+
           alignItems: "center",
           backgroundColor: "#312416",
-          paddingTop: 10,
+          paddingTop: 20,
           alignContent: "center",
-
+          height: 60,
           borderTopWidth: 0,
         },
         tabBarLabelPosition: "below-icon",
@@ -35,7 +36,7 @@ export default function Tabslayout() {
           tabBarIcon: () => (
             <Image
               source={require("../../../assets/images/patinha.png")}
-              style={{ width: 34, height: 34 }}
+              style={{ width: 34, height: 34, margin: 0, padding: 0 }}
             />
           ),
           tabBarBadge: 3,
@@ -48,7 +49,7 @@ export default function Tabslayout() {
           tabBarIcon: () => (
             <Image
               source={require("../../../assets/images/casinha.png")}
-              style={{ width: 34, height: 34 }}
+              style={{ width: 34, height: 34, margin: 0, padding: 0 }}
             />
           ),
         }}
@@ -59,7 +60,7 @@ export default function Tabslayout() {
           tabBarIcon: () => (
             <Image
               source={require("../../../assets/images/osso.png")}
-              style={{ width: 34, height: 34 }}
+              style={{ width: 34, height: 34, margin: 0, padding: 0 }}
             />
           ),
         }}
@@ -70,7 +71,7 @@ export default function Tabslayout() {
           tabBarIcon: () => (
             <Image
               source={require("../../../assets/images/mensagem.png")}
-              style={{ width: 34, height: 34 }}
+              style={{ width: 34, height: 34, margin: 0, padding: 0 }}
             />
           ),
         }}

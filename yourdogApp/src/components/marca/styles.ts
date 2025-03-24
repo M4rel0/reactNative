@@ -9,7 +9,17 @@ export const s = StyleSheet.create({
     justifyContent: "center",
     flexDirection: "row", // Alinha horizontalmente
     alignItems: "center",
-    padding: 20,
+    padding: 35,
+    marginBottom: 0,
+  },
+  container2: {
+    height: 50,
+    width: "100%",
+    backgroundColor: "#FBC5AC",
+    justifyContent: "center",
+    flexDirection: "row", // Alinha horizontalmente
+    alignItems: "center",
+    padding: 35,
     marginBottom: 0,
   },
 
