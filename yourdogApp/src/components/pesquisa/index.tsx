@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, View, TextInput } from "react-native";
+import { Text, View, TextInput, Image } from "react-native";
 import { styles } from "./styles";
 import { LinearGradient } from "expo-linear-gradient";
 
@@ -8,7 +8,7 @@ export function Pesquisa() {
     <View style={styles.pesquisa}>
       <View style={styles.innerShadow}>
         <LinearGradient
-          colors={["rgba(0, 0, 0, 0.2)", "rgba(0, 0, 0, 0)"]}
+          colors={["rgba(0, 0, 0, 0.01)", "rgba(0, 0, 0, 0.01)"]}
           style={styles.gradientOverlay}
         />
         <TextInput
@@ -17,7 +17,22 @@ export function Pesquisa() {
           placeholderTextColor="#888"
         />
       </View>
-      <View style={styles.filtros}></View>
+      <View style={styles.filtros}>
+        <View style={styles.objfiltro}>
+          <Text style={styles.text}>Filtros</Text>
+          <Image
+            source={require("../../../assets/images/Frame.png")}
+            style={styles.imagem}
+          />
+        </View>
+        <View style={styles.objfiltroapli}>
+          <Text style={styles.text}>Todos</Text>
+          <Image
+            source={require("../../../assets/images/FrameTodos.png")}
+            style={styles.imagem}
+          />
+        </View>
+      </View>
     </View>
   );
 }

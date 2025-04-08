@@ -4,6 +4,8 @@ import { Button } from "@/components/button";
 import { Marca, MarcaMarrom } from "@/components/marca";
 import { useFonts } from "expo-font";
 import { Pesquisa } from "@/components/pesquisa";
+import { GridImage } from "@/components/gridImage";
+
 export default function Menutind() {
   return (
     <View style={styles.container}>
@@ -20,6 +22,7 @@ export default function Menutind() {
         />
 
         <Pesquisa />
+        <GridImage />
       </View>
     </View>
   );
